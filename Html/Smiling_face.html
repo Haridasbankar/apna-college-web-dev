@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .face{
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            border-radius: 50%;
+            /* align-items: center; */
+            /* justify-content: center; */
+            align-items: center;
+            
+        }
+        .left-eye, .rigth-eye{
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+            background-color: black;
+           
+        }
+        .mouth{
+            background-color: red;
+            height: 75px;
+            width: 200px;
+            border-radius: 0,0,20px,20px;
+            margin: 250px  0 0 100px;
+            border-radius: 0 0 30px 30px;
+            position: absolute;
+        }
+        .left-eye{
+            position: absolute;
+            margin: 100px 0 0 75px;
+        }
+        .rigth-eye{
+            position: absolute;
+            margin: 100px 0 0 250px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="face">
+        <div class="eye">
+            <div class="left-eye"></div>
+            <div class="rigth-eye"></div>
+        </div>
+        <div class="mouth"></div>
+
+    </div>
+</body>
+</html>

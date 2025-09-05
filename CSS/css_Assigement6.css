@@ -1,0 +1,40 @@
+.container{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+.container div{
+    background-color: pink;
+    font-size: 1rem;
+}
+.header{
+    background-color: aqua;
+    grid-column: 1/ span 12;
+}
+.sidebar{
+    grid-column:1/span 3;
+    grid-row:2/span 10;
+    background-color: blue;
+}
+.ads{
+    grid-column:10/span 3;
+    grid-row:2/span 10;
+    background-color: blueviolet;
+}
+.main{
+    grid-column:4/span 6;
+    grid-row:3/span 9;
+    background-color: chartreuse;
+}
+.footer{
+    grid-column:1/span 12;
+    background-color: rgb(113, 92, 67);
+}
+.navigation{
+    grid-column:4/ span 6;
+    background-color: burlywood;
+}

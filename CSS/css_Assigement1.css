@@ -1,0 +1,35 @@
+p {
+    color: #A52A2A;
+    line-height: 30px;
+}
+
+* {
+    text-align: center;
+    font-family: Georgia;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+button {
+    background-color: white;
+    color: blueviolet;
+}
+
+p.Ozymandias {
+    text-decoration: underline;
+}
+
+h3 {
+    color: black;
+}
+
+textarea {
+    color: black;
+}
+
+span {
+    text-decoration: underline;
+}

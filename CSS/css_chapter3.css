@@ -1,0 +1,25 @@
+div{
+    height: 100px;
+    width: 500px;
+    
+    border: 10px solid yellow;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px, 20px,10px,20px;
+}
+h1{
+    border: 5px, solid rebeccapurple;
+    margin: 10px;
+    width: 50%;
+}
+.div{
+    margin: 10px;
+}
+button{
+    display: block;
+    align-items: center;
+    text-align: center;
+    border: 5px solid red;
+    border-radius: 10px;
+    justify-content: center;
+}

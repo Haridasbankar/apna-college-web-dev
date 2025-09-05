@@ -1,0 +1,76 @@
+/* Qs1. Add a 2s transition on box1 for width changes.
+       It should have 'ease-in' speed curve & 0.5s delay  */
+
+#box1 {
+  width: 100px;
+  height: 100px;
+  background: green;
+  transition: 2s ease-in 1s;
+}
+
+#box1:hover {
+  width: 600px;
+  background-color: black;
+  color: white;
+}
+
+/* Qs2. Using transform, move box2 200px to the right  & 
+        200px down. Also rotate it 90deg.*/
+
+#box2 {
+
+  
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: 1s;
+}
+#box2:hover {
+  transform: translate(200px, 200px) rotate(90deg);
+  border-radius: 50%;
+}
+
+/* Qs3. Using transform, skew box3 20deg along the x axis.*/
+
+#box3 {
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  transition: 0.5s;
+}
+#box3:hover {
+  box-shadow: 10px 10px 15px black;
+  transform: skew(20deg);
+  background-color: blue;
+}
+
+/* Qs4. Set a 2px horizontal & 2px vertical, green shadow 
+        for box4, with a 5px blur radius.*/
+
+#box4 {
+  width: 100px;
+  height: 100px;
+  background: lightgreen;
+  box-shadow: 2px 2px 10px green;
+  transition: 1s;
+}
+#box4:hover {
+  box-shadow: 10px 10px 15px black;
+  border-radius: 10px 10px 10px 10px;
+  background-color: green;
+}
+
+/* Qs5. Set Your picture or any picture as the background of the div
+        "myPic". Also, set transparency of this  div to 50%. */
+
+#myPic {
+  width: 200px;
+  height: 200px;
+  background: rgb(255, 192, 203);
+  transition: 0.5s;
+}
+#myPic:hover {
+  background: rgba(255, 192, 203, 0.5);
+  box-shadow: 10px 10px 15px black;
+  transform: scale(0.5);
+}
