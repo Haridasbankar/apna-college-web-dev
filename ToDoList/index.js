@@ -25,7 +25,8 @@ mongoose.connect("mongodb://127.0.0.1:27017/todolist")
 app.get("/alllist", async (req, res) => {
     try {
         const alllist = await todolist.find({});
-        console.log(alllist);
+        // console.log(alllist);
+
         res.render("index.ejs", { alllist });
     } catch (err) {
         res.status(500).send("Error fetching lists");
@@ -42,6 +43,8 @@ app.post("/alllist", async (req, res) => {
     try {
         const { title, description } = req.body;
         await new todolist({ title, description }).save();
+        console.log("data is added");
+        console.log(req.body);
         res.redirect("/alllist");
     } catch (err) {
         res.status(500).send("Error creating list");
@@ -95,7 +98,10 @@ app.put("/alllist/:id", async (req, res) => {
 // Delete list
 app.delete("/alllist/:id", async (req, res) => {
     try {
+
         const deletedList = await todolist.findByIdAndDelete(req.params.id);
+        console.log("deleeted items");
+        console.log(deletedList);
         if (!deletedList) return res.status(404).send("List not found");
         res.redirect("/alllist");
     } catch (err) {
